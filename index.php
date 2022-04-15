@@ -6,6 +6,9 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
+        <meta name="description" content="Check Database Konsumen Dealer, di bawah management CDN-ACEH">
+        <meta name="keywords" content="Dealer, Cek Motor, Database">
+        <meta name="author" content="Ryan Syah">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <!-- Bootstrap CSS -->
@@ -15,21 +18,23 @@
     </head>
     <body>
         <div class="col-xl-4 my-auto mx-auto">
+            <center>
+                <img src="Honda_Logo.svg" width="100px"alt="Logo Honda" class="image py-2">
+            </center>
             <div class="container bg-danger py-3">
-                <h3>Fasilitas Cek DB Konsumen</h3>
+                <h3>Cek DB Konsumen Honda</h3>
                 <form id="form" method="post">
                     <div class="form-group">
-                      <label>Nomor Mesin</label>
+                      <label class="text-white">Nomor Mesin</label>
                       <input type="text" class="form-control" style="text-transform: uppercase" name="iss" id="iss" aria-describedby="helpId" placeholder="JMXXX ZZZZZZ" maxlength="13" required>
                     </div>
                     <div class="form-group">
-                      <label>Nomor Rangka</label>
+                      <label class="text-white">Nomor Rangka</label>
                       <input type="text" class="form-control" style="text-transform: uppercase" name="ass" id="ass" aria-describedby="helpId" placeholder="1 Digit Terakhir dari Nomor Rangka" maxlength="10" required>
                     </div>
                     <button type="button" id="btnSubmit" onclick="sendcheck()" class="btn btn-primary">Check</button>
                 </form>
             </div>
-            <p class="bg-warningx`">Warning : Gunakan dengan bijak</p>
         </div>
 
         <div class="modal fade" id="modalRes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
