@@ -2,8 +2,8 @@
 
 if (isset($_POST["iss"]) && $_POST['ass']) {
 
-    $nomesin =  $_POST['iss'];
-    $norang =  $_POST['ass'];
+    $nomesin =  strtoupper($_POST['iss']);
+    $norang =  strtoupper($_POST['ass']);
 
     $ch = curl_init();
     $url = 'https://www.cdn.co.id/portalh23/klaim/search_dtl_nomesin.inc.php?nomesin='.rawurlencode($nomesin).'&suffix_norangka='.$norang;

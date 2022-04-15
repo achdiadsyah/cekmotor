@@ -20,11 +20,11 @@
                 <form id="form" method="post">
                     <div class="form-group">
                       <label>Nomor Mesin</label>
-                      <input type="text" class="form-control" name="iss" id="iss" aria-describedby="helpId" placeholder="JMXXX ZZZZZZ" maxlength="13" required>
+                      <input type="text" class="form-control" style="text-transform: uppercase" name="iss" id="iss" aria-describedby="helpId" placeholder="JMXXX ZZZZZZ" maxlength="13" required>
                     </div>
                     <div class="form-group">
                       <label>Nomor Rangka</label>
-                      <input type="text" class="form-control" name="ass" id="ass" aria-describedby="helpId" placeholder="1 Digit Terakhir dari Nomor Rangka" maxlength="10" required>
+                      <input type="text" class="form-control" style="text-transform: uppercase" name="ass" id="ass" aria-describedby="helpId" placeholder="1 Digit Terakhir dari Nomor Rangka" maxlength="10" required>
                     </div>
                     <button type="button" id="btnSubmit" onclick="sendcheck()" class="btn btn-primary">Check</button>
                 </form>
